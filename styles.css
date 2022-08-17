@@ -1,8 +1,8 @@
-﻿body {
-    font-family: Calibri;
+body {
+    
     background-color: #EAF6F6;
-    margin: 0 50px 0 50px;
-    padding: 0 50px 50px 50px;
+    margin: 0 80px 0 80px;
+    padding: 0 80px 80px 80px;
     border: 2px solid black;
 }
 .header{
@@ -11,6 +11,7 @@
     text-decoration: underline;
     font-weight: 800;
     color: navy;
+    margin-top:50px;
 }
 .contact-container{
   text-align: center;
@@ -23,13 +24,15 @@
   display: inline-block;
   margin: 0 10px 0 0;
 }
-h2{
+h3{
+    padding-top:10px;
     margin-bottom: 0px;
     color:navy;
 }
-h3{
+h5{
+
   margin-bottom: 0px;
-color: navy;
+  color: navy;
 }
 #University{
   margin-bottom: 15px;
@@ -61,8 +64,8 @@ li{
 }
 img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     top: 20px;
     right: 150px;
 }
