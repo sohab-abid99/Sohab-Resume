@@ -1,0 +1,71 @@
+﻿body {
+    font-family: Calibri;
+    background-color: #EAF6F6;
+    margin: 0 50px 0 50px;
+    padding: 0 50px 50px 50px;
+    border: 2px solid black;
+}
+.header{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+    color: navy;
+}
+.contact-container{
+  text-align: center;
+  list-style-type: none;
+}
+.contact:before{
+  content: "• ";
+}
+.contact:nth-child(1),.contact:nth-child(2){
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+h2{
+    margin-bottom: 0px;
+    color:navy;
+}
+h3{
+  margin-bottom: 0px;
+color: navy;
+}
+#University{
+  margin-bottom: 15px;
+  color: navy;
+}
+hr {
+    top: 20px;
+    border: none;
+    height: 2px;
+    background: navy;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.education-detail,.work-experience,.certifications{
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+    padding:0px;
+}
+p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px;
+}
+li{
+    font-style: italic;
+    line-height: 1.4;
+    font-size: 17px;
+}
+img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    right: 150px;
+}
+a:hover{
+    color: gray;
+}
