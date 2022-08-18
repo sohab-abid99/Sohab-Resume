@@ -46,14 +46,14 @@ $(".more-tag3").toggle(function () {
             line[0].appendChild(p);
 
             var ul = document.getElementById("certifications2");
-            var li = document.createElement("li");
-            li.appendChild(document.createTextNode(json.content6));
-            ul.appendChild(li);
+            var li1 = document.createElement("li");
+            li1.appendChild(document.createTextNode(json.content6));
+            ul.appendChild(li1);
         
-            var ul = document.getElementById("certifications2");
-            var li = document.createElement("certifications2");
-            li.appendChild(document.createTextNode(json.content7));
-            ul.appendChild(li);
+     
+            var li2 = document.createElement("li");
+            li2.appendChild(document.createTextNode(json.content7));
+            ul.appendChild(li2);
             $(".more-tag3").html("...Show Less")
         });
 }, function () {
