@@ -48,11 +48,11 @@ $(".more-tag3").toggle(function () {
             var ul = document.getElementById("certifications2");
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content6));
-            ul[0].appendChild(li);
+            ul.appendChild(li);
 
             var li = document.createElement("certifications2");
             li.appendChild(document.createTextNode(json.content7));
-            ul[0].appendChild(li);
+            ul.appendChild(li);
             $(".more-tag3").html("...Show Less")
         });
 }, function () {
