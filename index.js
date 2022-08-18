@@ -49,7 +49,8 @@ $(".more-tag3").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content6));
             ul.appendChild(li);
-
+        
+            var ul = document.getElementById("certifications2");
             var li = document.createElement("certifications2");
             li.appendChild(document.createTextNode(json.content7));
             ul.appendChild(li);
