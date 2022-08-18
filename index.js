@@ -2,7 +2,7 @@
 $(".more").toggle(function () {
     fetch('index.json')
         .then((response) => response.json())
-        .then((json) => $(".load-content").html(json); $(".more").html("...Show Less"););
+        .then((json) => $(".load-content").html(json.nam); $(".more").html("...Show Less"););
 }, function() {
     $(".load-content").html(null);
     $(".more").html("Show More...");
