@@ -38,7 +38,7 @@ $(".more-tag3").toggle(function () {
             p.appendChild(document.createTextNode(json.content4));
 
             div[0].appendChild(p);
-            div.appendChild(h5);
+            div[0].appendChild(h5);
 
             var line = document.getElementsByClassName("start-line");
             var p = document.createElement("p");
