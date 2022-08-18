@@ -1,5 +1,5 @@
 body {
-  
+    
     background-color: #EAF6F6;
     margin: 0 80px 0 80px;
     padding: 0 80px 80px 80px;
@@ -46,7 +46,7 @@ hr {
     margin-bottom: 10px;
     margin-top: 0px;
 }
-.education-detail,.work-experience,.certifications{
+.education-detail,.work-experience,.certifications1,.certifications2,.certifications3{
     display: flex;
     justify-content: space-between;
     margin:0px;
@@ -71,4 +71,10 @@ img{
 }
 a:hover{
     color: gray;
+}
+.more-tag1,.more-tag2,.more-tag3{
+    color: navy;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
 }
