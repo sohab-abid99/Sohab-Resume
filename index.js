@@ -37,13 +37,13 @@ $(".more-tag3").toggle(function () {
             var p = document.createElement("p");
             p.appendChild(document.createTextNode(json.content4));
 
-            div.appendChild(p);
+            div[0].appendChild(p);
             div.appendChild(h5);
 
-            var div = document.getElementsByClassName("start-line");
+            var line = document.getElementsByClassName("start-line");
             var p = document.createElement("p");
             p.appendChild(document.createTextNode(json.content5));
-            div.appendChild(p);
+            line.appendChild(p);
 
             var ul = document.getElementById("certifications2");
             var li = document.createElement("li");
