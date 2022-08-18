@@ -63,19 +63,21 @@ $(".more-tag3").toggle(function () {
 
             div2[0].appendChild(h5);
             div2[0].appendChild(p);
-
-            var ul2 = document.getElementById("certifications3");
-            var li = document.createElement("li");
-            li.appendChild(document.createTextNode(json.content10));
-            ul2.appendChild(li);
-
             $("#link1").remove();
+            var ul2 = document.getElementById("certifications3");
+            var li3 = document.createElement("li");
+            li3.appendChild(document.createTextNode(json.content10));
+            ul2.appendChild(li3);
+
+            
             $(".more-tag3").html("...Show Less")
         });
 }, function () {
         $(".certifications2").html(null);
         $(".start-line").html(null);
         $("#certifications2").html(null);
+        $(".certifications3").html(null);
+        $("#certifications3").html(null);
         $(".link-class").attr('id', 'link1');
     $(".more-tag3").html("Show More...");
 });
