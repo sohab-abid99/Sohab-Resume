@@ -30,7 +30,7 @@ $(".more-tag3").toggle(function () {
     fetch('index.json')
         .then((response) => response.json())
         .then((json) => {
-            var div = document.getElementByClassName("certifications2");
+            var div = document.getElementsByClassName("certifications2");
             var h5 = document.createElement("h5");
             h5.appendChild(document.createTextNode(json.content3));
 
@@ -40,7 +40,7 @@ $(".more-tag3").toggle(function () {
             div.appendChild(p);
             div.appendChild(h5);
 
-            var div = document.getElementByClassName("start-line");
+            var div = document.getElementsByClassName("start-line");
             var p = document.createElement("p");
             p.appendChild(document.createTextNode(json.content5));
             div.appendChild(p);
