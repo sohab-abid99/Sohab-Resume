@@ -93,13 +93,19 @@ $(".more-tag4").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
             ul[0].appendChild(li);   
-           $(".dice-list1").removeClass("dice-list2")
+           var li2 = document.createElement("li");
+            li2.appendChild(document.createTextNode(json.content13));
+            ul[0].appendChild(li2);
+
+            var a = document.createElement("a");
+            a.appendChild(document.createTextNode(json.content14));
+            li2.appendChild(a);
            $(".more-tag4").html("...Show Less")
         });
     
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
-        $(".dice-list1").addClass("dice-list2");        
+               
         $(".more-tag4").html("Show More...");
 });
