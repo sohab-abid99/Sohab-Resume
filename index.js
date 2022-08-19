@@ -67,11 +67,12 @@ $(".more-tag3").toggle(function () {
             var ul2 = document.getElementById("certifications3");
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content10));
-            ul2[0].appendChild(li);
+            ul2.appendChild(li);
 
-            $("#link1").remove();
-            $(".more-tag3").html("...Show Less")
+            
         });
+    $("#link1").remove();
+    $(".more-tag3").html("...Show Less")
 }, function () {
         $(".certifications2").html(null);
         $(".start-line").html(null);
@@ -91,17 +92,13 @@ $(".more-tag4").toggle(function () {
             var ul = document.getElementsByClassName("dice-list");
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
-            ul[0].appendChild(li);
-            var x = document.getElementsByClassName("dice-list1");
-            x.style.display = "block"
-                  
-
-            $(".more-tag4").html("...Show Less")
+            ul[0].appendChild(li);            
         });
+    $(".dice-list2").remove();
+    $(".more-tag4").html("...Show Less")
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
-       //$(".dice-list1").attr("class", "dice-list2");
-        document.getElementsByClassName("dice-list1").style.display = "none";
+        $".dice-list1").attr("class", "dice-list2");        
         $(".more-tag4").html("Show More...");
 });
