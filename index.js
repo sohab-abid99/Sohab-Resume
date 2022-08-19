@@ -99,6 +99,6 @@ $(".more-tag4").toggle(function () {
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
-        $".dice-list1").attr("class", "dice-list2");        
+        $(".dice-list1").attr("class", "dice-list2");        
         $(".more-tag4").html("Show More...");
 });
