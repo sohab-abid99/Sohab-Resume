@@ -91,12 +91,12 @@ $(".more-tag4").toggle(function () {
             var ul = document.getElementsByClassName("dice-list");
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
-            ul.appendChild(li);
+            ul[0].appendChild(li);
 
 
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content13));
-            ul.appendChild(li);
+            ul[0].appendChild(li);
             $(".more-tag4").html("...Show Less")
         });
 }, function () {
