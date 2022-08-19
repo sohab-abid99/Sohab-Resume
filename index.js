@@ -109,5 +109,5 @@ $(".more-tag4").toggle(function () {
         $(".fyp").html(null);
         $(".fyp-list").html(null);
        
-        $(".more-tag4").html("Show More...");
+        $(".more-tag4").html("Show Details...");
 });
