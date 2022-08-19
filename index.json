@@ -9,7 +9,8 @@
   "content8": "The Complete 2022 Web Development Bootcamp",
   "content9": "Feb 2022-April 2022",
   "content10": "Completed online course on Mern Stack Development which helped me to be able to build intercative websites with both frontend and backend development using HTML5, CSS3, Javascript, Bootstrap, EJS Templating, Node JS, Experess JS, React JS and MongoDB",
-  "content11": "Dice Game Web",
-  "content12": "The purpose of this project is to create dice game using HTML, CSS and JavaScript.",
-  "content13": "Web URL: <a href=\"https://sohab-abid99.github.io/Dice-Game/\" target=\"_blank\">Dice Game</a>"
+  "content11": " Goal: The object of this project was to design and develop an inexpensive four-legged structure that can be used domestically as a companion and can stabilize itself on complex and rough terrains.",
+  "content12": "My Role: Designed efficient and effective gait pattern with voice control commands aand successfully controlled the robot structure by implementing PID controller which assisted the robot to balance itself while walking.",
+  "content13": "4-Legged Companion Robot"
+
 }
