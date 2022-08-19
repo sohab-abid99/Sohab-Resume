@@ -88,13 +88,20 @@ $(".more-tag4").toggle(function () {
         .then((response) => response.json())
         .then((json) => {
             $(".dice").html(json.content11);
-            $(".dice-list1").html(json.content12);
-            $(".dice-list2").html(json.content13);
+            var ul = document.getElementsByClassName("dice-list");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(json.content12));
+            ul.appendChild(li);
+
+
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(json.content13));
+            ul.appendChild(li);
             $(".more-tag4").html("...Show Less")
         });
 }, function () {
         $(".dice").html(null);
-        $(".dice-list1").html(null);
-        $(".dice-list2").html(null);
+        $(".dice-list").html(null);
+       
         $(".more-tag4").html("Show More...");
 });
