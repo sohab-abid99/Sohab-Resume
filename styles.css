@@ -78,6 +78,6 @@ a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-#link1, .dice-list2{
+#link1{
     display: none;
 }
