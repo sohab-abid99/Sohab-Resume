@@ -122,6 +122,6 @@ $(".more-tag5").toggle(function () {
             $(".more-tag5").html("...Show Less")
         });
 }, function () {
-    $(".adiitional").html(null);
+    $(".additional").html(null);
     $(".more-tag5").html("Show Details...");
 });
