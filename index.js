@@ -128,10 +128,10 @@ $(".more-tag5").toggle(function () {
 $(".more-tag6").toggle(function () {
    
    
-    $(".game-list").removeClass("attach-list");
+    $(".games-list").removeClass("attach-list");
     $(".more-tag6").html("...Show Less");
       
 }, function () {
-    $(".game-list").addClass("attach-list")
+    $(".games-list").addClass("attach-list")
     $(".more-tag6").html("Show Details...");
 });
