@@ -92,13 +92,16 @@ $(".more-tag4").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
             ul[0].appendChild(li);
-            document.querySelector(".dice-list1").classList.remove("dice-list2")
+            var x = document.getElementsByClassName("dice-list1");
+            x.style.display = "block"
+                  
 
             $(".more-tag4").html("...Show Less")
         });
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
-       $(".dice-list1").attr("class", "dice-list2");
+       //$(".dice-list1").attr("class", "dice-list2");
+        document.getElementsByClassName("dice-list1").style.display = "none";
         $(".more-tag4").html("Show More...");
 });
