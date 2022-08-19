@@ -68,11 +68,11 @@ $(".more-tag3").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content10));
             ul2.appendChild(li);
-
+            $("#link1").removeClass("link1");
+            $(".more-tag3").html("...Show Less")
             
         });
-    $("#link1").removeClass("link1");
-    $(".more-tag3").html("...Show Less")
+    
 }, function () {
         $(".certifications2").html(null);
         $(".start-line").html(null);
@@ -80,7 +80,7 @@ $(".more-tag3").toggle(function () {
         $(".certifications3").html(null);
         $("#certifications3").html(null);
         $("#link1").addClass("link1");
-    $(".more-tag3").html("...Show Less");
+    $(".more-tag3").html("Show More...");
 });
 
 //toggle function for web projects sections
@@ -92,10 +92,11 @@ $(".more-tag4").toggle(function () {
             var ul = document.getElementsByClassName("dice-list");
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
-            ul[0].appendChild(li);            
+            ul[0].appendChild(li);   
+           $(".dice-list1").removeClass("dice-list2")
+           $(".more-tag4").html("...Show Less")
         });
-    $(".dice-list1").removeClass("dice-list2")
-    $(".more-tag4").html("...Show Less")
+    
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
