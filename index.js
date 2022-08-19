@@ -64,10 +64,10 @@ $(".more-tag3").toggle(function () {
             div2[0].appendChild(h5);
             div2[0].appendChild(p);
 
-            //var ul2 = document.getElementById("certifications3");
-            //var li = document.createElement("li");
-            //li.appendChild(document.createTextNode(json.content10));
-            //ul2.appendChild(li);
+            var ul2 = document.getElementById("certifications3");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(json.content10));
+            ul2[0].appendChild(li);
 
             $("#link1").remove();
             $(".more-tag3").html("...Show Less")
@@ -77,7 +77,7 @@ $(".more-tag3").toggle(function () {
         $(".start-line").html(null);
         $("#certifications2").html(null);
         $(".certifications3").html(null);
-        //$("#certifications3").html(null);
+        $("#certifications3").html(null);
         $(".link-class").attr('id', 'link1');
     $(".more-tag3").html("...Show Less");
 });
@@ -92,7 +92,7 @@ $(".more-tag4").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
             ul[0].appendChild(li);
-            $(".dice-list2").remove();
+            document.querySelector(".dice-list1").classList.remove("dice-list2")
 
             $(".more-tag4").html("...Show Less")
         });
