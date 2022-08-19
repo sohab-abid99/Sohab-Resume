@@ -79,7 +79,7 @@ $(".more-tag3").toggle(function () {
         $(".certifications3").html(null);
         $("#certifications3").html(null);
         $(".link-class").attr('id', 'link1');
-    $(".more-tag3").html("...Show Less");
+    $(".more-tag3").html("...Show More");
 });
 
 //toggle function for fyp
@@ -95,19 +95,35 @@ $(".more-tag4").toggle(function () {
 
             var li2 = document.createElement("li");
             li2.appendChild(document.createTextNode(json.content12));
-            ul[0].appendChild(li2);
-
-           
-            
+            ul[0].appendChild(li2);   
             $(".more-tag4").html("...Show Less")
         });
-    
-
-
-    
 }, function () {
         $(".fyp").html(null);
         $(".fyp-list").html(null);
        
-        $(".more-tag4").html("Show Details...");
+        $(".more-tag4").html("Show More...");
+});
+
+//toggle function for additional
+$(".more-tag5").toggle(function () {
+    fetch('index.json')
+        .then((response) => response.json())
+        .then((json) => {
+            
+            var ul = document.getElementsByClassName("additional");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(json.content14));
+            ul[0].appendChild(li);
+
+            var li2 = document.createElement("li");
+            li2.appendChild(document.createTextNode(json.content15));
+            ul[0].appendChild(li2);
+            $(".more-tag5").html("...Show Less")
+        });
+}, function () {
+    $(".fyp").html(null);
+    $(".fyp-list").html(null);
+
+    $(".more-tag4").html("Show Details...");
 });
