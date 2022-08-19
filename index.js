@@ -64,21 +64,19 @@ $(".more-tag3").toggle(function () {
             div2[0].appendChild(h5);
             div2[0].appendChild(p);
 
-            var ul2 = document.getElementById("certifications3");
-            var li = document.createElement("li");
-            li.appendChild(document.createTextNode(json.content10));
-            ul2[0].appendChild(li);
+            
 
-            $("#link1").remove();
-            $(".more-tag3").html("...Show Less")
+           
         });
+     $(".certifications-list").removeClass("link-list");
+     $(".more-tag3").html("...Show Less")
 }, function () {
         $(".certifications2").html(null);
         $(".start-line").html(null);
         $("#certifications2").html(null);
         $(".certifications3").html(null);
-        $("#certifications3").html(null);
-        $(".link-class").attr('id', 'link1');
+       
+         $(".certifications-list").addClass("link-list");
     $(".more-tag3").html("...Show More");
 });
 
