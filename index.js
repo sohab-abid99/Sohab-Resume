@@ -123,3 +123,15 @@ $(".more-tag5").toggle(function () {
     $(".additional").html(null);
     $(".more-tag5").html("Show Details...");
 });
+
+//toggle function for projects
+$(".more-tag6").toggle(function () {
+   
+   
+    $(".game-list").removeClass("attach-list");
+    $(".more-tag6").html("...Show Less");
+      
+}, function () {
+    $(".game-list").addClass("attach-list")
+    $(".more-tag6").html("Show Details...");
+});
