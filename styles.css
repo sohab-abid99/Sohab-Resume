@@ -78,7 +78,9 @@ a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-.link-list,.attach-list{
+.link-list{
     display: none;
 }
-
+.attach-list{
+    display: none;
+}
