@@ -92,16 +92,13 @@ $(".more-tag4").toggle(function () {
             var li = document.createElement("li");
             li.appendChild(document.createTextNode(json.content12));
             ul[0].appendChild(li);
+            $(".dice-list2").remove();
 
-
-            var li = document.createElement("li");
-            li.appendChild(document.createTextNode(json.content13));
-            ul[0].appendChild(li);
             $(".more-tag4").html("...Show Less")
         });
 }, function () {
         $(".dice").html(null);
         $(".dice-list").html(null);
-       
+       $(".dice-list1").attr("class", "dice-list2");
         $(".more-tag4").html("Show More...");
 });
