@@ -122,8 +122,6 @@ $(".more-tag5").toggle(function () {
             $(".more-tag5").html("...Show Less")
         });
 }, function () {
-    $(".fyp").html(null);
-    $(".fyp-list").html(null);
-
+    $(".adiitional").html(null);
     $(".more-tag4").html("Show Details...");
 });
