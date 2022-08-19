@@ -72,13 +72,13 @@ img{
 a:hover{
     color: gray;
 }
-.more-tag1,.more-tag2,.more-tag3,.more-tag4,.more-tag5{
+.more-tag1,.more-tag2,.more-tag3,.more-tag4,.more-tag5,.more-tag6{
     color: navy;
     font-size: 13px;
     text-decoration: underline;
     cursor: pointer;
 }
-.link-list{
+.link-list,.attach-list{
     display: none;
 }
 
